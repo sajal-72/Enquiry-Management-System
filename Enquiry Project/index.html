@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enquiry Management System</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Enquiry Management System</h1>
+    <div class="form-container">
+      <h2>Add Enquiry</h2>
+      <br />
+      <br />
+      <form id="enquiryForm">
+        <div id="f1">
+          <label for="category">Category:</label>
+          <select id="category" required>
+            <option value="">Select a category</option>
+          </select>
+        </div>
+        <br />
+
+        <div id="f2">
+          <label for="product" class="label-gap">Product:</label>
+          <select id="product" required disabled>
+            <option value="">Select a product</option>
+          </select>
+        </div>
+
+        <div id="f3">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" required />
+
+          <button type="button" id="addButton" onclick="">Add</button>
+        </div>
+      </form>
+      <br />
+      <br />
+    </div>
+    <br />
+    <div class="enquiry-list">
+      <br />
+      <h2>Enquiry List</h2>
+      <br />
+      <input type="text" id="search" placeholder="Search Enquiries" />
+      <br />
+      <ul id="enquiryList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
